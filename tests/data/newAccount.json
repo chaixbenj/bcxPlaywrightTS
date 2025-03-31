@@ -1,0 +1,20 @@
+[
+    {
+        "test-id": "tc1",
+        "title":"Mr",
+        "password":"Password01!",
+        "days":"11",
+        "months":"February",
+        "years":"1984",
+        "firstName":"John",
+        "lastName":"Doe",
+        "company":"Automation Company",
+        "address":"13 A street",
+        "address2":"Building B",
+        "country":"United States",
+        "state":"New Jersey",
+        "city":"New York",
+        "zipcode":"07008",
+        "mobileNumber":"07008050505"
+    }
+]

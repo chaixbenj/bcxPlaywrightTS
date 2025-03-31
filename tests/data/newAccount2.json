@@ -1,0 +1,26 @@
+[
+    {
+        "test-id":"tc1",
+        "id_gender1":"N/A",
+        "id_gender2":"true",
+        "name":"N/A",
+        "email":"N/A",
+        "password":"Asdniadnie01!",
+        "days":"10",
+        "months":"February",
+        "years":"2001",
+        "newsletter":"true",
+        "optin":"true",
+        "first_name":"Maurice",
+        "last_name":"Philippe",
+        "company":"Framatome",
+        "address1":"1 rue de la rue",
+        "address2":"à droite",
+        "country":"United States",
+        "state":"New Jersey",
+        "city":"New York",
+        "zipcode":"07008",
+        "mobile_number":"05060545",
+        "Create Account":"click"
+    }
+]

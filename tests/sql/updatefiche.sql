@@ -1,0 +1,1 @@
+update mykanbansdev.fiches set name = 'aa' where id = ?
