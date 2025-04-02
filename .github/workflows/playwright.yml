@@ -26,6 +26,12 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
 
+      - name: Setup Java (required for Allure)
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       # Étape 1 : Générer le rapport Allure après l'exécution des tests
       - name: Generate Allure report
         run: |
