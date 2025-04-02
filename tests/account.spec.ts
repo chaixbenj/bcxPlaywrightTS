@@ -10,7 +10,7 @@ import { Headers } from '../src/base/test/Headers';
 let name: string;
 let email: string;
 
-baseTest.describe('Tests compte', () => {
+baseTest.describe('Tests compte @git', () => {
 
     baseTest.beforeAll(async () => {
         name = DataUtil.randomAlphaString();
@@ -35,7 +35,7 @@ baseTest.describe('Tests compte', () => {
         await homePage.loggedInAs0.injectValues({"{0}": name}).assertVisible(true);
     });
 
-    baseTest('Test 2: Supprimer un compte 2', { tag: '@acceptance' }, async ({ page }) => {
+    baseTest('Test 2: Supprimer un compte 2 @git', { tag: '@acceptance' }, async ({ page }) => {
         Headers.feature('FT01 - gestion des comptes');
         Headers.story('US02 - suppression compte');
 
