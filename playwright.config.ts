@@ -34,7 +34,7 @@ export default defineConfig({
 ],
   outputDir: 'reports/test-output',
   use: {
-      headless: false,
+      headless: true,
       //locale: 'fr-FR',
       baseURL: BASE_URL,
       viewport: { width: 800, height: 900 },
