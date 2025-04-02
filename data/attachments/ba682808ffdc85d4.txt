@@ -1,0 +1,57 @@
+click Consent
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[aria-label=\'Consent\']').first() to be visible
+
+    at BaseElement.findElement (/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:59:45)
+    at BaseElement.findFirstElement (/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:80:41)
+    at /__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:92:29
+    at BaseElement.click (/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:90:9)
+    at /__w/bcxPlaywrightTS/bcxPlaywrightTS/tests/account.spec.ts:44:9 {
+  name: 'TimeoutError',
+  [Symbol(step)]: {
+    stepId: 'pw:api@13',
+    location: {
+      file: '/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts',
+      line: 59,
+      column: 45,
+      function: 'BaseElement.findElement'
+    },
+    category: 'pw:api',
+    title: "locator.waitFor(button[aria-label='Consent'] >> nth=0)",
+    apiName: 'locator.waitFor',
+    params: {
+      selector: "button[aria-label='Consent'] >> nth=0",
+      strict: true,
+      omitReturnValue: true,
+      timeout: 10000
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    complete: [Function: complete],
+    endWallTime: 1743588187425,
+    error: {
+      message: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('button[aria-label=\\'Consent\\']').first() to be visible\x1B[22m\n",
+      stack: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('button[aria-label=\\'Consent\\']').first() to be visible\x1B[22m\n" +
+        '\n' +
+        '    at BaseElement.findElement (/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:59:45)\n' +
+        '    at BaseElement.findFirstElement (/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:80:41)\n' +
+        '    at /__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:92:29\n' +
+        '    at BaseElement.click (/__w/bcxPlaywrightTS/bcxPlaywrightTS/src/base/web/element/BaseElement.ts:90:9)\n' +
+        '    at /__w/bcxPlaywrightTS/bcxPlaywrightTS/tests/account.spec.ts:44:9',
+      cause: undefined
+    }
+  }
+}
+L'élément avec le locator locator('button[aria-label=\'Consent\']') est introuvable, le test se poursuit avec un élément approchant
+click signup / login
+setValue login-email => bpicruubobuop@test.fr
+setValue login-password => Password01!
+click login-button
+click delete account
+click continue-button

@@ -1,0 +1,1 @@
+[{"uid":"acc5112d5445c7e7","name":"créer un compte : cas passant @git","time":{"start":1743588161860,"stop":1743588176291,"duration":14431},"status":"passed","severity":"normal"},{"uid":"f88602f75accf37","name":"Test 2: Supprimer un compte 2 @git","time":{"start":1743588176401,"stop":1743588189667,"duration":13266},"status":"passed","severity":"normal"}]
