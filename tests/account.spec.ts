@@ -18,7 +18,7 @@ baseTest.describe('Tests compte', () => {
     });
 
 
-    baseTest('créer un compte : cas passant', { tag: '@acceptance' }, async ({ page }) => {
+    baseTest('créer un compte : cas passant @git', { tag: '@acceptance' }, async ({ page }) => {
         Headers.feature('FT01 - gestion des comptes');
         Headers.story('US01 - création compte');
         const homePage = new AutomationExerciseHome(page);

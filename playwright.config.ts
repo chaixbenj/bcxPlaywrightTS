@@ -13,6 +13,7 @@ import { BASE_URL, TIMEOUT } from './config/env';
  */
 
 export default defineConfig({
+  grep: /@git/,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
