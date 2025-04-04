@@ -30,7 +30,7 @@ Call log:
     steps: [],
     attachmentIndices: [],
     complete: [Function: complete],
-    endWallTime: 1743588187425,
+    endWallTime: 1743776283500,
     error: {
       message: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
         'Call log:\n' +
@@ -50,7 +50,7 @@ Call log:
 }
 L'élément avec le locator locator('button[aria-label=\'Consent\']') est introuvable, le test se poursuit avec un élément approchant
 click signup / login
-setValue login-email => bpicruubobuop@test.fr
+setValue login-email => bpicppoerucie@test.fr
 setValue login-password => Password01!
 click login-button
 click delete account
