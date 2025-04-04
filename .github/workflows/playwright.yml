@@ -37,7 +37,9 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: eval "npm run test:${{ github.event.inputs.env }}"
+        run: |
+          ENV_NAME=${{ github.event.inputs.env }}
+          npm run test:$ENV_NAME
 
       - name: Setup Java (required for Allure)
         uses: actions/setup-java@v3
