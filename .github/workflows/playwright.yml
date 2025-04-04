@@ -4,6 +4,16 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Environnement à tester'
+        required: true
+        default: 'recette'
+        type: choice
+        options:
+          - recette
+          - preprod
 
 permissions:
   contents: write
@@ -27,7 +37,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npm run test:${{ github.event.inputs.env }}
 
       - name: Setup Java (required for Allure)
         uses: actions/setup-java@v3
